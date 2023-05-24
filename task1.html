@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Завдання 1</title>
+</head>
+<body bgcolor="#ffe4c4">
+<header>
+  <h2>Форма для додавання викладача</h2>
+</header>
+<form>
+  <section>
+    <label for="name">
+      Повне ім'я:
+      <input type="text" id="name" name="name" required/>
+    </label>
+  </section>
+
+  <section>
+    <label for="gender">
+      Стать:
+      <select name="gender" id="gender">
+        <option value="male">Чоловік</option>
+        <option value="female">Жінка</option>
+        <option value="other">Інша</option>
+      </select>
+    </label>
+  </section>
+
+  <section>
+    <label for="birthdate">
+      День народження:
+      <input type="date" id="birthdate" name="birthdate" required/>
+    </label>
+  </section>
+
+  <section>
+    <label for="email">
+      Електронна пошта:
+      <input type="email" name="email" id="email" required/>
+    </label>
+  </section>
+
+  <section>
+    <label for="phone">
+      Телефон:
+      <input type="tel" name="phone" id="phone" pattern="[0-9]{10}" required/>
+    </label>
+  </section>
+
+  <section>
+    <label for="color">
+      Бажаний колір фону:
+      <input type="color" name="color" id="color" required/>
+    </label>
+  </section>
+
+  <section>
+    <label for="country">
+      Країна:
+      <input type="text" name="country" id="country" required/>
+    </label>
+  </section>
+
+  <section>
+    <label for="city">
+      Місто:
+      <input type="text" name="city" id="city" required/>
+    </label>
+  </section>
+
+  <section>
+    <label for="comment">
+      <textarea name="comment" id="comment" placeholder="Коментар..." cols="30" rows="10"></textarea>
+    </label>
+  </section>
+
+  <button id="submit">Підтвердити</button>
+</form>
+</body>
+</html>
